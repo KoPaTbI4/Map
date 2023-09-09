@@ -1,0 +1,20 @@
+-- Создание базы данных
+USE master
+CREATE DATABASE MarkersDB
+GO
+-- Создание таблиц
+USE MarkersDB
+CREATE TABLE Markers (ID int PRIMARY KEY IDENTITY(1,1), Coordinates nvarchar(100),
+ Title nvarchar(40))
+GO
+-- Заполнение таблиц
+USE MarkersDB
+INSERT Markers VALUES ('55.0415, 82.9346', 'Title1')
+INSERT Markers VALUES ('55.006727, 82.940136', 'Title2')
+INSERT Markers VALUES ('55.020999, 82.923056', 'Title3')
+INSERT Markers VALUES ('55.031970, 82.919708', 'Title4')
+INSERT Markers VALUES ('55.033987, 82.911426', 'Title5')
+INSERT Markers VALUES ('55.040750, 82.909752', 'Title6')
+INSERT Markers VALUES ('55.048495, 82.915460', 'Title7')
+
+GO
